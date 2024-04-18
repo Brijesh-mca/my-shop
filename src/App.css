@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 2px solid sandybrown;   
+    background-color: rgb(213, 255, 241);
+
+}
+.navbar{
+    width: 100%;
+    cursor: pointer;
+}
+.imgsize{
+    width: 250px;
+    height: 200px;
+    transition: 0.3s;
+  
+}
+.imgsize:hover{
+    height: 230px;
+    width: 280px;
+}
+.catagory ul li{
+    box-shadow: 5px 3px 2px rgb(36, 178, 225);
+    text-transform: capitalize;
+    list-style: none;
+    font-size: 22px;
+    background-color: rgb(13, 234, 241);
+    text-align: center;
+    cursor: pointer;
+  
+}
+.mycol{
+    display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+ 
+
+}
+.nav{
+    height: 100vh;
+    width: 60%;
+   z-index: 1;
+    position: fixed;
+   left: -1000px;
+   transition: 0.4s;
+    
+}
+.mygrad{
+    background:linear-gradient( to right,rgb(14, 176, 178),white);
+    
+}
+.mygard2{
+    background: linear-gradient( to right,black, white);
+    color: white;
+}
+.mynav{
+    position: fixed;
+    right: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    top: 20px;
+}
+.activeNav{
+   left: 0px;
+}
+.nav ul li{
+    list-style: none;
+    padding: 5x;
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    transition: 0.2s;
+}
+.nav ul li:hover{
+    font-size: 28px;
+}
+.mypage ul li{
+     
+ float: left;
+ font-size: 26px;
+ list-style: none !important;
+transition: 0.3s;
+
+ margin-left: 10px;
+ padding: 10px;
+ font-weight: 700;
+}
+.mytext{
+    color: rgb(0, 0, 0);
+    font-family: serif,;
+    padding: 0px 10px;
+    text-decoration: none;
+    box-shadow:10px 5px 5px 5px rgb(0, 179, 255);
+}
+.textfont{
+    font-weight: 700;
+    animation: ani 3s   linear  infinite;
+}
+@keyframes ani{
+0%{
+    background-color: aqua;
+    color: black;
+}
+50%{
+    background-color: rgb(58, 73, 73);
+    color: rgb(71, 55, 55);
+}
+90%{
+    background-color: rgb(5, 5, 5);
+    color: rgb(0, 255, 229);
+}
+100%{
+    background-color: aqua;
+    color: black;
+}
+
+}
+
+
+.mypage ul li:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: 900;
+}
+.mycat:hover{
+    background-color: rgb(49, 33, 33);
+    color: rgb(0, 255, 255);
+    font-size: 26px ;
+    box-shadow: 3px 3px 0px black;
+}
+.myprice:hover{
+    background-color: rgb(49, 33, 33);
+    color: rgb(0, 255, 255);
+    font-size: 18px ;
+    box-shadow: 3px 3px 0px black;
+}
